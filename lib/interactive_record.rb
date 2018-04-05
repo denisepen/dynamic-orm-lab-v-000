@@ -58,7 +58,7 @@ def table_name_for_insert
 
   def self.find_by(attribute: value)
     binding.pry
-    sql = "SELECT * FROM #{self.table_name} WHERE #{attribute}: = #{[:attribute]}"
+    sql = "SELECT * FROM #{self.table_name} WHERE #{attribute} = #{[:attribute]}"
     binding.pry
     DB[:conn].execute(sql)
 
