@@ -57,7 +57,7 @@ def table_name_for_insert
   end
 
   def self.find_by(id)
-    sql = "SELECT * FROM #{self.table_name} WHERE id = '#{[:id]}'"
+    sql = "SELECT * FROM #{self.table_name} WHERE id = '#{:id}'"
     DB[:conn].execute(sql)
 
   end
