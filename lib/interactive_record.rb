@@ -56,7 +56,7 @@ def table_name_for_insert
     DB[:conn].execute(sql)
   end
 
-  def self.find_by()
+  def self.find_by(attribute)
 
   end
 
