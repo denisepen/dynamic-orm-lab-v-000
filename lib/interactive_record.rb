@@ -65,7 +65,4 @@ def table_name_for_insert
     DB[:conn].execute(sql)
   end
 
-  end
-
-
 end
