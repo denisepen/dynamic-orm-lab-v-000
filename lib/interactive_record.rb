@@ -57,7 +57,7 @@ def table_name_for_insert
   end
 
   def self.find_by(attribute: value)
-    sql = "SELECT * FROM #{self.table_name} WHERE #{attribute:} = '#{[:attribute]}'"
+    sql = "SELECT * FROM #{self.table_name} WHERE #{attribute:} = [:attribute]"
     DB[:conn].execute(sql)
 
   end
